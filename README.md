@@ -1,4 +1,5 @@
-# Basic-Calculator
+# Calculator
+## Arithmetic-Calculator
 - Purpose: A calculator that performs basic arithmetic, i.e., addition, subtraction, multiplication, and division.
 - Technologies Used: Visual Studio, Python
 - Role/Responsibilities: Sole developer in charge of designing and developing
