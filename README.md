@@ -1,4 +1,4 @@
-# Calculator
+# Calculator Project
 - Purpose: A calculator that features basic arithmetic, advanced functions, trigonometry, matrix calculations, derivative & integration solver, equation solver, history log, graphing capabilities, and a user-friendly interface
 - Role/Responsibilities: Sole developer in charge of designing and developing the back- and front-end.
   
