@@ -31,6 +31,15 @@ def division(a, b, points):
     else:
         return "ERROR: Division by Zero"
 
+# Define Integer Division() Function
+def int_division(a, b, points):
+    if b != 0:
+        getcontext().prec = points + 2
+        result = Decimal(a) // Decimal(b)
+        return f"Result: {result:.{points}f}"
+    else:
+        return "ERROR: Division by Zero"
+
 # Define Print_Menu() Function
 def print_menu():
     print("BASIC CALCULATOR")
@@ -38,6 +47,7 @@ def print_menu():
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
+    print("5. Integer Division")
     print("H. View History")
     print("X. Exit Program")
 
@@ -51,7 +61,8 @@ def main():
         "1": "+",
         "2": "-",
         "3": "*",
-        "4": "/"
+        "4": "/",
+        "5": "//"
     }
 
     print_menu()
@@ -87,6 +98,9 @@ def main():
             elif option == "4":
                 # 4. Division
                 result = division(num1, num2, points)
+            elif option == "5":
+                # 5. Integer Division
+                result = int_division(num1, num2, points)
             else:
                 # ERROR Message
                 print("ERROR: Invalid Input")
