@@ -1,2 +1,0 @@
-SymPy logic
-NumPy logic
