@@ -1,26 +1,10 @@
 # Standard Library Imports
 import sys
 
-# Third-party Imports
-from PyQt6.QtWidgets import QApplication
-
-# Locacl Library Imports
-from gui.app_theme import load_fonts, load_stylesheet
-from gui.windows.main_window import main_window
-
-def main():
-    """A calculator combining basic/advanced arithmetic, equation solving, statistics, and unit conversions."""
-    app = QApplication(sys.argv)
-
-    load_fonts()
-    load_stylesheet(app)
-
-    window = main_window()
-    window.show()
-
-    sys.exit(app.exec())
+from app import run
 
 if __name__ == "__main__":
+    """'main.py' is the entry point for the program."""
     print(f"Running {__name__}\n")
-    main()
+    sys.exit(run())
     print("Closing program...")
