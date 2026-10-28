@@ -1,1 +1,0 @@
-# Trigonometic Calculations
